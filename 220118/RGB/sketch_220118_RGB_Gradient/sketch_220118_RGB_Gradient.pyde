@@ -37,7 +37,7 @@ Color = (255,255,255)
 #Main Program
 
 def setup():
-    size(500,500)
+    size(1000,1000)
     background(255)
 
 def draw():
@@ -47,10 +47,10 @@ def draw():
     to_color   = color(0,0,255)
 
 
-    for i in range(500):
+    for i in range(1000):
 
         #establish color percentage each time the loop runs
-        color_perc = float(i)/500.0
+        color_perc = float(i)/1000.0
         
         #set the color value each time the loop runs
         color_val = lerpColor(from_color,to_color,color_perc)
@@ -60,7 +60,7 @@ def draw():
         stroke(color_val)
         line(i,0,i,1000)
         print ("Still Looping!")
-        
+    save("Linear.png")    
     print("Done")
     noLoop()
 #*****************************************************************************

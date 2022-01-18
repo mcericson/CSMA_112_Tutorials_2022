@@ -37,7 +37,7 @@ Color = (255,255,255)
 #Main Program
 
 def setup():
-    size(500,500)
+    size(1000,1000)
     background(255)
     
     #setting the color mode and value scales. 
@@ -46,12 +46,13 @@ def setup():
 def draw():
 
     noStroke()
-    for Red in range(500):
-        for Green in range(500):
-            stroke(Red,Green,500)
+    for Red in range(1000):
+        for Green in range(1000):
+            stroke(Red,Green,1000)
             point(Red,Green)
         
-
+    
+    save("HSV_Gradient.png")
         
     print("Done")
     noLoop()
