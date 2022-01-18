@@ -80,7 +80,7 @@ def draw():
                 stroke(Red,Green,Blue)
                 point(Red,Green,Blue)
 
-    
+    #save("RGB_cube.png")
 
 #*****************************************************************************
 #End
