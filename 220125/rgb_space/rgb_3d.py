@@ -40,5 +40,8 @@ def rgb_model():
                 g = j
                 b = p
                 
-                stroke(i,j,p)
-                point(x0,y0,z0)
+                noStroke()
+                fill(i,j,p)
+                translate(x0,y0,z0)
+                box(1)
+                translate(-x0,-y0,-z0)

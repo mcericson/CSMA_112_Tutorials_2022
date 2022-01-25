@@ -25,7 +25,7 @@ def rgb_model():
             g = j
             b = 0
         
-            stroke(r,g,b)
-            point(x0,y0)
+            fill(r,g,b)
+            rect(x0,y0,1)
             
     
