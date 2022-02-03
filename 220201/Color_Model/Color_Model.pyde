@@ -1,5 +1,5 @@
 add_library('sound')
-import hsv_model as model
+import rgb_model as model
 
 
 import microphone 
@@ -25,6 +25,7 @@ def draw():
     
     model.update_agent_location(agent_x,agent_y)
     color_1, color_2, color_3 = model.get_current_color_values()
+    print(color_1, color_2, color_3)
     background(color_1, color_2, color_3)
     print(model.current_h_val)
     x,y = model.agent_x, model.agent_y
