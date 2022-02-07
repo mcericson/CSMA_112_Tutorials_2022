@@ -8,6 +8,7 @@ def initialize(sketch, AudioIn, Amplitude):
     ampl = Amplitude(sketch)
     ampl.input(mic)
 
+
 def get_level():
     input_level = ampl.analyze()
     new_max = default_max*sensitivity 

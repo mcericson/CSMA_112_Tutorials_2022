@@ -8,8 +8,6 @@ class Recorder(object):
     
         self.location  = []
         self.color_val = []
-        self.birthday = int(time.time()*1000)
-        self.age = []
 
             
     def get_recorded_location(self,x,y):

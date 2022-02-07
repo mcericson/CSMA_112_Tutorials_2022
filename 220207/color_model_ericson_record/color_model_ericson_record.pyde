@@ -8,7 +8,7 @@ def setup():
     size(model.x_dim,model.y_dim)
     model.set_color_mode() #changed to set color mode in module
     microphone.initialize(this, AudioIn, Amplitude)
-    microphone.sensitivity = 5.0
+    microphone.sensitivity = 10.0
     frameRate(20)
     
     agent_record = Recorder()
@@ -31,10 +31,15 @@ def render():
     
     
     background(model.get_white())
+    
+    for i in range(len(color_vals)):
+        if len((color_vals)) >1:
+            background(color_vals[i-1])
+            
     for i in range(len(color_vals)):
         fill(color_vals[i])
         x0,y0 = agent_locations[i]
-        rect(x0,y0,10,10)
+        rect(x0,y0,20,20)
 
 
 

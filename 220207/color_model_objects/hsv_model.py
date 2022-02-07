@@ -1,6 +1,6 @@
 import time
 
-class HSV(object):
+class HSV_Model(object):
 
     def __init__(self):
     
@@ -32,7 +32,9 @@ class HSV(object):
     def update_agent_location(self,angle_norm,radius_norm):
     
         self.angle_deg = angle_norm*360
-        self.radius = radius_norm * self.radius_max
+  
+        mouse_radius = dist(mouseX,mouseY,self.x_dim/2, self.y_dim/2)
+        self.radius = map(mouse_radius,0,self.x_dim,0,self.radius_max) #radius_norm * self.radius_max
         
     def get_agent_location(self):
         
