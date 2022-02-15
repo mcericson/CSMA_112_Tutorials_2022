@@ -22,6 +22,16 @@ def get_agent_location_color():
     
     return color(r, g, b)
 
+def get_color_values():
+    
+    proc_color = get_agent_location_color()
+    
+    r = round(red(proc_color),2)
+    g = round(green(proc_color),2)
+    b = round(blue(proc_color),2)
+    
+    return r,g,b
+
 def get_agent_location():
     return agent_x, agent_y
 
