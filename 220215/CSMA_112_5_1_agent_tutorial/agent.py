@@ -4,7 +4,7 @@ class Agent(object):
     def __init__(self):
         self.x = 0
         self.y = 0
-        self.direction = [1, 1]
+        self.direction = [random(0, 1), random(0, 1)]
         self.history = []
         self.history_max = 500
         self.history_enabled = False
@@ -21,7 +21,9 @@ class Agent(object):
     def reverse_y(self):
         self.direction[1] *= -1
         
-    def move(self, dx, dy):
+    def move(self, amount):
+        dx = amount * self.direction[0]
+        dy = amount * self.direction[1]
         self.move_to(self.x + dx, self.y + dy)
     
     def move_to(self, x, y):
