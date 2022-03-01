@@ -62,9 +62,23 @@ This guide will help you to get started using your m5stick c plus.
 
 ## First Program
 
-- **VSCODE** Create a folder on your computer.  In VSCODE, from the file pulldown menu, open the folder.  
+- **VSCODE** Create a folder on your computer.  In VSCODE, from the file pulldown menu, open the folder.  Next to the folder name select the **+** sign and add file to the folder. Name the file by right clicking on the file and selecting rename.  Add the name and the file extension ".py".
+
+- **VSCODE** Add the following lines to your python file.
+```python
+
+from m5stack import *
+from m5ui import *
+from uiflow import *
 
 
+setScreenColor(0xff0000)
+
+```
+
+- **VSCODE** Import this file onto your M5Stick by uploading to the folder "apps".
+
+- **VSCODE** Once the file appears in the folder "apps" select it hit the solid play arrow in the upper right hand corner of your window.  If it is working, the screen on your M5stick should turn red. 
 
 
 
