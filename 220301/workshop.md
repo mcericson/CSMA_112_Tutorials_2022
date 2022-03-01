@@ -45,7 +45,25 @@ This guide will help you to get started using your m5stick c plus.
 
 - **VSCODE** Plug-in your m5stick to the usb-c cable. Connect it by clicking on the "Add M5stack" at the lower left hand corner of your screen. Once you select this a window should pop-up asking you to select the comm port. Simply check the box a click "ok".
 
-- **VSCODE**On the left hand side navigate of the VSCODE window and select M5Stick
+- **VSCODE** On the left hand side navigate of the VSCODE window and select M5Stick. 
+
+- **VSCODE** Navigate to the "File Explorer" tab on the left hand side tool bar and click on it. 
+
+- **VSCODE** Scroll Down to the "M5STACK DEVICE" and expand it.  It should reveal the file structure that currently exists on the device. 
+
+## File Structure
+
+- **main.py** There several folders and files within the existing structure.  You can save files of any name to the folder and run them with **VSCODE**, but to flash a file to the stick and have it run when the stick boots up it needs to be saved as main.py in outermost directory (not in a folder).
+
+- **Create a File** To create file hit the **+** sign at next to any of the folders. Name the file "name.py".  Open the file.
+
+- **Save a File** Alternatively you can create file on your computer and save it to he M5Stick.  To do this select the icon with file drawer and up arrow "upload". Select a file from your computer and it should appear in the device.
+
+
+## First Program
+
+- **VSCODE** Create a folder on your computer.  In VSCODE, from the file pulldown menu, open the folder.  
+
 
 
 
