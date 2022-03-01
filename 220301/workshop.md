@@ -25,7 +25,7 @@ This guide will help you to get started using your m5stick c plus.
 
 ## M5 Stick C Plus
 
-**Hardware**: ESP32 Pico with 4mb of Flash memory and 512 kb of RAM. Microphone, speaker, LCD, LED and accellerometer are all part of the hardware.
+**Hardware**: ESP32 Pico with 4mb of Flash memory and 512 kb of RAM. Microphone, speaker, LCD, LED and accelerometer are all part of the hardware.
 
 **Firmware**: M5stick library "burned" to device with M5 burner
 
