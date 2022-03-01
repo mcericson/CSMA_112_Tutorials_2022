@@ -41,6 +41,8 @@ This guide will help you to get started using your m5stick c plus.
 
 - **VSCODE** Open up VScode and navigate the "extensions" palette on the left hand side of the window and search for m5stack.  Install the extension: curdeveryday.vscode-m5stack-mpy
 
+**Quick Start Guide for M5stick** This provides information on burning, and using the buttons on the stick. https://docs.m5stack.com/en/quick_start/m5stickc/uiflow
+
 - **M5Stick** Set the m5stick to USB mode.  To do this, turn the power on by holding the lower left button, and then quickly press the upper right button. The setting window should open. Use the right button to scroll through options and the left button to select.  Select "switch mode" and then navigate to "USB" and select. Return to the main menu and and select "Reboot"
 
 - **VSCODE** Plug-in your m5stick to the usb-c cable. Connect it by clicking on the "Add M5stack" at the lower left hand corner of your screen. Once you select this a window should pop-up asking you to select the comm port. Simply check the box a click "ok".
@@ -50,6 +52,8 @@ This guide will help you to get started using your m5stick c plus.
 - **VSCODE** Navigate to the "File Explorer" tab on the left hand side tool bar and click on it. 
 
 - **VSCODE** Scroll Down to the "M5STACK DEVICE" and expand it.  It should reveal the file structure that currently exists on the device. 
+
+
 
 ## File Structure
 
@@ -61,6 +65,8 @@ This guide will help you to get started using your m5stick c plus.
 
 
 ## First Program
+
+- **Documentation** The best documentation can be found at this the link below. Importantly, you need to have google translate it to English from the original Danish:  “M5 MicroPython Guide - M5 Guide Documentation.” n.d. Accessed January 10, 2022. https://m5guide.readthedocs.io/da/latest/.
 
 - **VSCODE** Create a folder on your computer.  In VSCODE, from the file pulldown menu, open the folder.  Next to the folder name select the **+** sign and add file to the folder. Name the file by right clicking on the file and selecting rename.  Add the name and the file extension ".py".
 

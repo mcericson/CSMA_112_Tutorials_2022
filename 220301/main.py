@@ -1,5 +1,3 @@
+import set_color
 
-
-import set_color 
-
-set_color.flash_rgb(500,10)
+set_color.flash_rgb(500, 10)
