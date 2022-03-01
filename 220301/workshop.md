@@ -3,7 +3,7 @@
 This guide will help you to get started using your m5stick c plus.
 
 ## Terminology
-- **Nonvolatile memory**: Information that is written into memory such as a solid state drive that will persist after the power is switched off (ROM).
+- **Non-volatile memory**: Information that is written into memory such as a solid state drive that will persist after the power is switched off (ROM).
 
 - **Volatile memory**: Information that is created by a program and will disappear once the power is switched off (RAM).
 
@@ -25,11 +25,11 @@ This guide will help you to get started using your m5stick c plus.
 
 ## M5 Stick C Plus
 
-**Hardware**: ESP32 Pico with 4mb of Flash memory and 512 kb of RAM. Microphone, speaker, LCD, LED and accelerometer are all part of the hardware.
+- **Hardware**: ESP32 Pico with 4mb of Flash memory and 512 kb of RAM. Microphone, speaker, LCD, LED and accelerometer are all part of the hardware.
 
-**Firmware**: M5stick library "burned" to device with M5 burner
+- **Firmware**: M5stick library "burned" to device with M5 burner
 
-**Embedded Software**: Flashed to the device by saving with the IDE.
+- **Embedded Software**: Flashed to the device by saving with the IDE.
 
 ## Getting Started
 
