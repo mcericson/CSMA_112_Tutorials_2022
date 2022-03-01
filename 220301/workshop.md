@@ -78,7 +78,62 @@ setScreenColor(0xff0000)
 
 - **VSCODE** Import this file onto your M5Stick by uploading to the folder "apps".
 
-- **VSCODE** Once the file appears in the folder "apps" select it hit the solid play arrow in the upper right hand corner of your window.  If it is working, the screen on your M5stick should turn red. 
+- **VSCODE** Once the file appears in the folder "apps" open the file and select the solid play arrow in the upper right hand corner of your window.  If it is working, the screen on your M5stick should turn red. 
 
+## Second Program
 
+ - **Hexadecimal Color** In the previous example we used the RGB color model with hexadecimal color notation.  In another class we will go over the way the notation system works, but for today is sufficient to note that hexadecimal notation stores the values of RGB (0-255) in hexadecimal pairs ranging from 00 - ff. The M5stick requires the addition of "0x" + the hexadecimal notation to specify a color For example:
 
+ ```python
+
+ red   =    0xff0000
+ green =    0x00ff00
+ blue  =    0x0000ff
+
+ ```
+
+- **VSCODE** The next program that we will create will make the stick flash from red to green to blue and then repeat a set number of times. To this we will need to use the time library. Importantly, we are no longer working in Processing so the "pulse" of the draw loop is something that we have to create ourselves. 
+
+- **VSCODE** In the outermost directory of the M5 stick make a new file called set_color.py. Open the file. Add the following imports to the head of document:
+
+```python
+from m5stack import *
+from m5ui import *
+from uiflow import *
+import time
+
+```
+
+- **VSCODE** Now we need to write a program that creates a color and then pauses. To do that we will use the m5stick function setScreenColor() and the time function time.sleep_ms():
+
+```python
+
+def color_pause(color,duration):
+    
+    setScreenColor(color)
+    time.sleep_ms(duration)
+    
+```
+
+- **VSCODE** If we were working in Processing we could just use the draw() loop to execute this code.  Since we are not, we will need to make our own loop.  To do this we will use  a "while" loop.  This loop will run until a condition is met and we can create a stopping point by adding a counter:
+
+```python
+def flash_rgb(duration, stop):
+    count = 0
+    while count < stop:
+        
+        count += 1
+        color_pause(0xff0000, duration)
+        color_pause(0x00ff00, duration)
+        color_pause(0x0000ff, duration)
+```
+
+- **VSCODE** Next we will open the main.py program and replace the existing code with:
+
+```python
+import set_color 
+
+set_color.flash_rgb(500,10)
+```
+
+This will import our set_color module and call the flash_rgb() function.  Asking the computer to render the screen in a red and pause 500 ms, Green and pause 500 ms, and Blue and pause 500 ms.  The code will run a total of 10 times. 
