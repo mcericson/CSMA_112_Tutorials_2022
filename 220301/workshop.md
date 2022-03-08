@@ -41,7 +41,7 @@ This guide will help you to get started using your m5stick c plus.
 
 - **VSCODE** Open up VScode and navigate the "extensions" palette on the left hand side of the window and search for m5stack.  Install the extension: curdeveryday.vscode-m5stack-mpy
 
-**Quick Start Guide for M5stick** This provides information on burning, and using the buttons on the stick. https://docs.m5stack.com/en/quick_start/m5stickc/uiflow
+- **Quick Start Guide for M5stick** This provides information on burning, and using the buttons on the stick. https://docs.m5stack.com/en/quick_start/m5stickc/uiflow
 
 - **M5Stick** Set the m5stick to USB mode.  To do this, turn the power on by holding the lower left button, and then quickly press the upper right button. The setting window should open. Use the right button to scroll through options and the left button to select.  Select "switch mode" and then navigate to "USB" and select. Return to the main menu and and select "Reboot"
 
