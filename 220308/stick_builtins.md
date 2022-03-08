@@ -108,6 +108,18 @@ from m5Stack import btnA
 
 btnA.wasPressed() #returns a boolean. Pressed is True.
 ```
+## Buzzer
+The m5Stick includes a buzzer.  This device is capable of producing a tone at frequency with a set volume.
+
+```python
+from m5stack import speaker
+
+speaker.setVolume(1)
+speaker.sing(220,  1)
+
+```
+
+
 ## Accelerometer and Gyroscope
 The m5Stick includes an inertial measurement unit called an IMU.  The IMU can detect:
 
