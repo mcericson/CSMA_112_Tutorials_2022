@@ -155,6 +155,7 @@ stick_IMU = imu.IMU()
 #get the x, y, and z values of rotation
 gx, gy, gz = stick_IMU.gyro
 
+```
 ## ESP32 
 
 The board of the m5Stick is the ESP32. Full documentation of the micropython libraries associated with the board can be found here: https://docs.micropython.org/en/latest/esp32/quickref.html#
