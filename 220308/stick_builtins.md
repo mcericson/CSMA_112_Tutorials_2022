@@ -1,6 +1,5 @@
  # 220308 m5Stick Builtin Modules
  
- See [https://github.com/m5stack/M5Stack_MicroPython](https://github.com/m5stack/M5Stack_MicroPython)
 
  ## Screen
 
