@@ -14,11 +14,11 @@ sonar = None
 
 def read_sonar_distance(inches=True):
     global sonar
-    if sonar is None:
+    if sonar is None: # Lazy-loading of sensor (only when needed)
         sonar = unit.get(unit.ULTRASONIC, unit.PORTA)
     dist = sonar.distance
     if inches:
-        dist = dist / 25.4
+        dist = dist / 25.4 # Convert from mm to in
     return int(round(dist))
 
 
