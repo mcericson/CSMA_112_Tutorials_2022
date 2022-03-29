@@ -346,16 +346,21 @@ lcd.text(5,5, str(data))
 
 ```python
 
-import unit 
+from m5stack import *
+from m5ui import *
+from uiflow import *
+import time
+import unit
 
-def read_sonar_distance(inches=True):
-    global sonar
-    if sonar is None:
-        sonar = unit.get(unit.ULTRASONIC, unit.PORTA)
-    dist = sonar.distance
-    if inches:
-        dist = dist / 25.4
-    return int(round(dist))
+
+sonar = unit.get(unit.ULTRASONIC, unit.PORTA)
+
+while True:
+
+    lcd.clear(0x000000)
+    dist = str(sonar.distance)
+    lcd.print(dist,10,20)
+    time.sleep(1)
 
 ```
 
