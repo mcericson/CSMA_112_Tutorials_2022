@@ -1,5 +1,6 @@
 import random
 
+
 def set_screen_color(r, g, b):
     print("Screen color set to {},{},{}".format(r, g, b))
 
@@ -9,5 +10,19 @@ def read_accelerometer(normalized=False):
 
 
 def print_to_screen(msg, x, y):
-   output_msg = "Printing {} at {}, {}" .format(msg, x, y)
-   print(output_msg)
+    output_msg = "Printing {} at {},{}".format(msg, x, y)
+    print(output_msg)
+
+
+def erase_screen():
+    set_screen_color(0, 0, 0)
+
+def display_message(msg):
+    print(msg)
+
+pressed = False
+def button_pressed():
+    global pressed
+    state = pressed
+    pressed = not pressed
+    return state
