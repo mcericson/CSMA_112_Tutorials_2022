@@ -16,10 +16,9 @@ This guide will help you to get started using your m5stick c plus.
 
 - **Micropython for the M5Stick:**  https://github.com/m5stack/M5Stack_MicroPython
 
-- **M5Flow On-line Editor:** The default mode for the m5flow editor is blocky.  However if open a demo file from the pull-down menu, you can switch to python mode and see the python implementation of the module. https://flow.m5stack.com/
-
-
 - **Micropython Documentation:**  https://docs.micropython.org/en/latest/esp32/quickref.html#
+
+- **M5Flow On-line Editor:** The default mode for the m5flow editor is blocky.  However if open a demo file from the pull-down menu, you can switch to python mode and see the python implementation of the module. https://flow.m5stack.com/
 
 - **UIflow Documentation:** This is the documentation for the UIflow code editor.  Fork this repository and save it to your Github desktop.  Open the M5Flow online editor.  Select the open file icon in the upper right hand corner of the editor and and navigate to the example that you would like to open.  The sonic sensor and all other external sensors can be found in the "Unit" folder. The editor will open the file as blocky example.  Toggle to python mode and you will see the example written in python. https://github.com/m5stack/M5-ProductExampleCodes
 
