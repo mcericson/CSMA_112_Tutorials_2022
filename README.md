@@ -24,6 +24,8 @@ This guide will help you to get started using your m5stick c plus.
 
 - **Quick Start:** https://m5guide.readthedocs.io/da/latest/.
 
+- **Accessing Built-in Modules with REPL:**  Read Evaluate Print Loop or REPL offers a way of interfacing with the stick via a terminal. It also allows you to access and see all of the modules and libraries that are on the stick.  This video explains the process:  https://www.youtube.com/watch?v=V67MY-1ccqM
+
 ## Terminology
 - **Non-volatile memory**: Information that is written into memory such as a solid state drive that will persist after the power is switched off (ROM).
 
