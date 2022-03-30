@@ -22,6 +22,8 @@ This guide will help you to get started using your m5stick c plus.
 
 - **UIflow Documentation:** This is the documentation for the UIflow code editor.  Fork this repository and save it to your Github desktop.  Open the M5Flow online editor.  Select the open file icon in the upper right hand corner of the editor and and navigate to the example that you would like to open.  The sonic sensor and all other external sensors can be found in the "Unit" folder. The editor will open the file as blocky example.  Toggle to python mode and you will see the example written in python. https://github.com/m5stack/M5-ProductExampleCodes
 
+- **Quick Start:** https://m5guide.readthedocs.io/da/latest/.
+
 ## Terminology
 - **Non-volatile memory**: Information that is written into memory such as a solid state drive that will persist after the power is switched off (ROM).
 
