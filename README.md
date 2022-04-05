@@ -26,7 +26,7 @@ This guide will help you to get started using your m5stick c plus.
 
 - **Accessing Built-in Modules with REPL:**  Read Evaluate Print Loop or REPL offers a way of interfacing with the stick via a terminal. It also allows you to access and see all of the modules and libraries that are on the stick.  This video explains the process:  https://www.youtube.com/watch?v=V67MY-1ccqM
 
--**Alternate IDE // Thonny:** Another IDE that works well with m5Stack is Thonny.  You can download it here: https://thonny.org/ You can also watch this video on how to connect and run programs on the stick: https://www.youtube.com/watch?v=YEQPAK609Uo
+- **Alternate IDE // Thonny:** Another IDE that works well with m5Stack is Thonny.  You can download it here: https://thonny.org/ You can also watch this video on how to connect and run programs on the stick: https://www.youtube.com/watch?v=YEQPAK609Uo
 
 
 ## Terminology
