@@ -1,25 +1,23 @@
-
 def set_color_mode():
-    colorMode(HSB,360,10,10)
-    background(0,0,100) 
+    colorMode(HSB, 360, 10, 10)
+    background(0,0,10)
     
-      
+
 def room_box(distance, pitch, roll):
-    
-    room_width =  300
-    room_depth =  300
-    room_height = 300
+    print distance, pitch, roll
+    room_width = width/3
+    room_depth = width/3
+    room_height = width/3
     
     rotateZ(radians(pitch))
     rotateY(radians(roll))
     
-    h_value = abs(map(pitch, 0, 180, 0, 360))
-    s_value = map(distance, 0, 24, 0 , 10)
+    h_value = map(pitch, 0, 180, 0, 360)
+    s_value = map(distance, 0, 6, 0, 10)
     v_value = 10
     
-    background(h_value/2, s_value/2, v_value)
-    
     room_color = color(h_value, s_value, v_value)
+    print s_value
     
     fill(room_color)
     noStroke()
