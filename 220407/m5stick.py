@@ -6,6 +6,7 @@ import imu
 import m5ui
 import unit
 import wifiCfg
+import fusion
 
 my_imu = imu.IMU()
 
