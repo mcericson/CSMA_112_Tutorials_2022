@@ -23,7 +23,6 @@ def draw():
 
 def process_input(value, default):
     new_value = default
-    value = msg.get_value("dist")
     if value:
         try:
             new_value = float(value)
