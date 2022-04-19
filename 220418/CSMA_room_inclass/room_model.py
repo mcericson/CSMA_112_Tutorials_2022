@@ -1,12 +1,11 @@
 def set_color_mode():
     colorMode(HSB, 360, 10, 10)
     background(0,0,10)
+    smooth(1000)
     
 
 def room_box(distance, pitch, roll):
-    room_width = width/3
-    room_depth = width/3
-    room_height = width/3
+
     
 
     
@@ -14,6 +13,11 @@ def room_box(distance, pitch, roll):
     s_value = map(pitch, 0, 6, 0, 10)
     v_value = 10
     
+    room_width = map(distance, 0, 30, 1, width/3)
+    room_depth = map(pitch, 0, 6, 1, width/3)
+    room_height = map(roll, 0, 6, 1, width/3)
+    
+    scale_val = map(distance, 0, 30, 0, 2)
     rotateZ(radians(abs(pitch)))
     rotateY(radians(abs(roll)))
     
@@ -21,5 +25,6 @@ def room_box(distance, pitch, roll):
     room_color = color(h_value, s_value, v_value)
 
     fill(room_color)
-    stroke(0,0,10)
+    stroke(0,0,0)
+    scale(scale_val)
     box(room_width, room_height, room_depth)

@@ -10,6 +10,7 @@ def setup():
     size(1000,1000,P3D)
     model.set_color_mode()
     frameRate(30)
+    ortho()
     global listener
     listener = server.Connection(this, 8080)
 
@@ -34,6 +35,7 @@ def draw():
             roll_val = msg.get_value()
 
     print([m.to_str() for m in msgs]) # Print the messages received for debugging
-    
-    translate(width/2, height/2)
+    add_x = map(pitch_val, 0, 90, 0,width/4)
+    add_y = map(roll_val, 0, 90, 0,width/4) 
+    translate((width/2) + add_x, (height/2) + add_y)
     model.room_box(dist_val, pitch_val, roll_val)
