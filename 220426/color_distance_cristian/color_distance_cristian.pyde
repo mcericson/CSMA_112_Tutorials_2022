@@ -1,4 +1,3 @@
-
 x_dim = 1000
 y_dim = 1000
 
@@ -26,7 +25,6 @@ def draw():
     if count == x_dim:
         background(255)
         count = 0
-    
     
     
     
